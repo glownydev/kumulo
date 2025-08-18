@@ -3,38 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kumulo - Hébergeur Web</title>
+    <title>Kumulo - Hébergement Minecraft</title>
     <style>
-        <body style="background:#fff;min-height:100vh;margin:0;padding:0;font-family:Arial,sans-serif;">
-            <main style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:90vh;">
-                <section style="background:#fff;border-radius:24px;box-shadow:0 4px 32px rgba(0,0,0,0.08);padding:48px 32px;max-width:420px;width:100%;margin:32px 0;">
-                    <img src="..." alt="..." style="width:96px;height:96px;border-radius:50%;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-                    <h1 style="color:#222;font-size:2.2em;margin-bottom:18px;font-weight:700;">...</h1>
-                    <div style="color:#1976d2;font-size:1.1em;margin-bottom:18px;font-weight:500;">...</div>
-                    <p style="color:#555;font-size:1.1em;margin-bottom:24px;">...</p>
-                    <!-- Ajoute ici tes autres éléments/sections organisés -->
-                </section>
-                <footer style="width:100%;text-align:center;margin:32px 0 12px 0;font-size:1em;color:#444;">
-                    <hr style="max-width:320px;margin:16px auto 8px auto;">
-                    <span>Vous avez déjà un compte ? <a href="/panel" style="color:#1976d2;text-decoration:underline;">Accédez au panel ci-dessous</a></span>
-                </footer>
-            </main>
-        </body>
+        body {
+            background: #f7f8fa;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', Arial, sans-serif;
+        }
         .container {
             text-align: center;
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 600px;
+            background: #fff;
+            padding: 48px 32px;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+            max-width: 420px;
+            margin: 48px auto 24px auto;
         }
         h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
+            color: #222;
+            font-size: 2.2em;
+            margin-bottom: 18px;
+            font-weight: 700;
         }
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .subtitle {
+            color: #1976d2;
+            font-size: 1.1em;
+            margin-bottom: 18px;
+            font-weight: 500;
+        }
+        .offers {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin: 32px 0 24px 0;
+        }
+        .offer {
+            background: #f2f6fc;
+            border-radius: 12px;
+            padding: 18px 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            text-align: left;
+        }
+        .offer-title {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #1976d2;
+        }
+        .offer-desc {
+            color: #444;
+            font-size: 1em;
+            margin: 6px 0 0 0;
+        }
+        .offer-price {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-top: 8px;
         }
         .badge {
             background-color: #e74c3c;
@@ -43,19 +69,48 @@
             border-radius: 4px;
             font-size: 14px;
             display: inline-block;
+            margin-bottom: 18px;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            margin: 32px 0 12px 0;
+            font-size: 1em;
+            color: #444;
+        }
+        a {
+            color: #1976d2;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Kumulo</h1>
-        <p>Hébergeur web professionnel</p>
+        <div class="subtitle">Hébergement Minecraft simple, rapide et sécurisé</div>
         <div class="badge">Site en développement</div>
-        <p>Nous travaillons actuellement sur notre plateforme pour vous offrir le meilleur service d'hébergement possible.</p>
+        <div class="offers">
+            <div class="offer">
+                <div class="offer-title">8 Go - Gratuit</div>
+                <div class="offer-desc">1 vCPU, 100 Mb/s, 1 serveur max par personne, serveur personnalisable</div>
+                <div class="offer-price">0€ / mois</div>
+            </div>
+            <div class="offer">
+                <div class="offer-title">12 Go - Premium</div>
+                <div class="offer-desc">Plus de RAM pour des serveurs plus grands et plus performants</div>
+                <div class="offer-price">5€ / mois</div>
+            </div>
+            <div class="offer">
+                <div class="offer-title">16 Go - Ultra</div>
+                <div class="offer-desc">Pour les projets exigeants et les grandes communautés</div>
+                <div class="offer-price">10€ / mois</div>
+            </div>
+        </div>
+        <p style="color:#555;font-size:1.05em;margin-bottom:0;">Créez et personnalisez votre serveur Minecraft facilement.<br>Profitez d'une expérience sans prise de tête, adaptée à tous.</p>
     </div>
-    <div style="width:100%;text-align:center;margin:48px 0 12px 0;font-size:1em;color:#444;">
+    <footer>
         <hr style="max-width:320px;margin:16px auto 8px auto;">
-        <span>Vous avez déjà un compte ? <a href="http://panel.kumulo.fr" style="color:#1976d2;text-decoration:underline;">Accédez au panel ci-dessous</a></span>
-    </div>
+        <span>Vous avez déjà un compte ? <a href="http://panel.kumulo.fr">Accédez au panel ci-dessous</a></span>
+    </footer>
 </body>
 </html>
