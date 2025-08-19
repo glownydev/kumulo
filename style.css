@@ -25,11 +25,15 @@ body {
 .navbar-links {
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 .navbar-links a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
+    line-height: 1;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-toggle {
@@ -241,24 +245,84 @@ footer {
     color: #aaaaaa;
     font-size: 0.9em;
 }
+
+/* Toast Notification Styles */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+}
+
+.toast.show {
+    transform: translateX(0);
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.toast-icon {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.toast-message {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 8px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.toast-close:hover {
+    opacity: 1;
+}
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
 .nav-button {
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 8px 16px;
     border-radius: 30px;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.2s ease;
     font-family: 'Poppins', Arial, sans-serif;
-    color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    line-height: 1;
 }
 
 .nav-button:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
+    color: #000000;
     transform: scale(1.05);
+    border: 2px solid #ffffff;
 }
 
 .hero-section {
@@ -305,19 +369,58 @@ a {
 
 .user-avatars {
     display: flex;
+    gap: 10px;
 }
 
-.avatar {
+.avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.creator-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ffffff;
-    border: 2px solid #0a0a14;
-    margin-left: -10px;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.avatar:first-child {
-    margin-left: 0;
+.creator-avatar:hover {
+    transform: scale(1.1);
+}
+
+.avatar-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    margin-bottom: 8px;
+}
+
+.avatar-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+}
+
+.avatar-container:hover .avatar-tooltip {
+    opacity: 1;
+    visibility: visible;
 }
 
 .start-button {
