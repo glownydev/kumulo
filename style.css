@@ -6,6 +6,7 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     color: #f0f0f0;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 .navbar {
     background: rgba(10, 10, 15, 0.9);
