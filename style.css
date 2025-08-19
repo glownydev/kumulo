@@ -1,0 +1,123 @@
+body {
+    background: #1a1a1a;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #f0f0f0;
+}
+.navbar {
+    background: #2c2c2c;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar-links {
+    display: flex;
+    gap: 24px;
+}
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.container {
+    text-align: center;
+    background: #2c2c2c;
+    padding: 48px 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.2);
+    max-width: 800px;
+    margin: 48px auto 24px auto;
+}
+h1 {
+    color: #ffffff;
+    font-size: 2.2em;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.subtitle {
+    color: #ffffff;
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+.offers {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 32px 0 24px 0;
+}
+.offer {
+    background: #3a3a3a;
+    border-radius: 12px;
+    padding: 18px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.offer-title {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #ffffff;
+}
+.offer-desc {
+    color: #cccccc;
+    font-size: 1em;
+    margin: 6px 0 0 0;
+}
+.offer-price {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 8px;
+}
+.offer-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.badge {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+.partners {
+    margin-top: 48px;
+}
+.partners h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.partner {
+    font-size: 1.1em;
+    color: #cccccc;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 32px 0 12px 0;
+    font-size: 1em;
+    color: #aaaaaa;
+}
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
