@@ -156,9 +156,15 @@ h1 {
     text-align: center;
     border: none;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.offer-link:hover {
+.offer-link:hover,
+.offer-link:active {
     background-color: rgba(255, 255, 255, 0.9);
     transform: scale(1.05);
 }
@@ -305,6 +311,7 @@ footer {
 a {
     color: #ffffff;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-button {
@@ -317,9 +324,11 @@ a {
     color: #ffffff;
     border: 2px solid #ffffff;
     line-height: 1;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.nav-button:hover {
+.nav-button:hover,
+.nav-button:active {
     background-color: #ffffff;
     color: #000000;
     transform: scale(1.05);
@@ -516,6 +525,10 @@ a {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 16px 20px;
+    }
+    
     .navbar-links {
         display: none;
         flex-direction: column;
@@ -555,12 +568,18 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
     
+    .container {
+        margin: 24px 16px;
+        padding: 32px 20px;
+    }
+    
     h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
+        line-height: 1.2;
     }
     
     .subtitle {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     
     .hero-content {
@@ -569,17 +588,24 @@ a {
     
     .features-list {
         align-items: center;
+        gap: 8px;
+    }
+    
+    .feature {
+        font-size: 1em;
     }
     
     .trusted-by {
         flex-direction: column;
         align-items: center;
+        gap: 12px;
     }
     
     .footer-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 30px;
     }
     
     .footer-links {
@@ -589,5 +615,76 @@ a {
     
     .offers {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .offer {
+        padding: 20px 16px;
+    }
+    
+    .offer-title {
+        font-size: 1.3em;
+    }
+    
+    .offer-price {
+        font-size: 1.4em;
+    }
+    
+    .game-section {
+        padding: 20px;
+        margin-top: 40px;
+    }
+    
+    .game-section h2 {
+        font-size: 1.8em;
+    }
+    
+    footer {
+        padding: 40px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 16px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.3em;
+    }
+    
+    .container {
+        margin: 16px 8px;
+        padding: 24px 16px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .subtitle {
+        font-size: 1.1em;
+    }
+    
+    .offer {
+        padding: 16px 12px;
+    }
+    
+    .offer-title {
+        font-size: 1.2em;
+    }
+    
+    .offer-price {
+        font-size: 1.3em;
+    }
+    
+    .start-button {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+    
+    .discover-button {
+        padding: 8px 20px;
+        font-size: 0.9em;
     }
 }
