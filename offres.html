@@ -7,42 +7,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="navbar-brand">Kumulo</a>
-        <div class="navbar-links">
-            <a href="offres.html">LES OFFRES</a>
-            <a href="legal.html">LEGAL</a>
-            <a href="a-propos.html">A PROPOS DE NOUS</a>
-            <a href="partenariats.html">NOS PARTENARIATS</a>
+        <a href="index.html" class="navbar-brand"><i class="fas fa-cube"></i> Kumulo</a>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar-links" id="navbar-links">
+            <a href="offres.html">SERVEUR MINECRAFT</a>
+            <a href="offres.html">JEUX</a>
+            <a href="offres.html">HÉBERGEMENT</a>
+            <a href="a-propos.html">À PROPOS</a>
+            <a href="#" class="nav-button">COMMENCER</a>
         </div>
     </nav>
-    <div class="container">
-        <h1>Nos Offres</h1>
-        <div class="offers">
-            <div class="offer">
-                <div class="offer-title">8 Go - Gratuit</div>
-                <div class="offer-desc">Cette offre vous donne un serveur est un essai après 10 jours d'utilisation il vous sera enlevé</div>
-                <div class="offer-price">0€ / mois</div>
-                <a href="https://billing.kumulo.fr/products/minecraft/serveur-gratuit" class="offer-link">Acheter</a>
-            </div>
-            <div class="offer">
-                <div class="offer-title">16 Go - Grade Or</div>
-                <div class="offer-desc">Service de paiement en cours de développement</div>
-                <div class="offer-price">12€ / mois</div>
-            </div>
-            <div class="offer">
-                <div class="offer-title">32 Go - Grade Diamant</div>
-                <div class="offer-desc">Service de paiement en cours de développement</div>
-                <div class="offer-price">25€ / mois</div>
-            </div>
+    <div class="hero-section">
+        <div class="container">
+            <h1>NOS OFFRES</h1>
+            <div class="subtitle">HÉBERGEMENT DE SERVEURS MINECRAFT</div>
+            <div class="badge">MINECRAFT JAVA & BEDROCK</div>
+            <p>Découvrez nos offres d'hébergement de serveurs Minecraft optimisées pour une expérience de jeu fluide et sans lag.</p>
         </div>
     </div>
+    
+    <div class="container game-section">
+        <h2>Nos offres de serveurs</h2>
+        <div class="offers">
+            <div class="offer">
+                <div class="offer-icon"><i class="fas fa-cubes"></i></div>
+                <div class="offer-title">Serveur Gratuit - Grade Fer</div>
+                <div class="offer-desc">Serveur 8 Go - Essai 10 jours (sera supprimé après)</div>
+                <div class="offer-price">0€ <span class="price-period">/mois</span></div>
+                <a href="https://billing.kumulo.fr/products/minecraft/serveur-gratuit" class="offer-link">Voir l'offre</a>
+            </div>
+            <div class="offer">
+                <div class="offer-icon"><i class="fas fa-cube"></i></div>
+                <div class="offer-title">Grade Or</div>
+                <div class="offer-desc">Serveur 16 Go</div>
+                <div class="offer-price">12€ <span class="price-period">/mois</span></div>
+                <a href="offres.html" class="offer-link">Service de paiement en cours de développement</a>
+            </div>
+            <div class="offer">
+                <div class="offer-icon"><i class="fas fa-gem"></i></div>
+                <div class="offer-title">Grade Diamant</div>
+                <div class="offer-desc">Serveur 32 Go</div>
+                <div class="offer-price">25€ <span class="price-period">/mois</span></div>
+                <a href="offres.html" class="offer-link">Service de paiement en cours de développement</a>
+            </div>
+        </div>
+        
+
+    </div>
     <footer>
-        <hr style="max-width:320px;margin:16px auto 8px auto;border-color: #444;">
-        <span>Vous avez déjà un compte ? <a href="https://ptero.kumulo.fr">Accédez au panel ci-dessous</a></span>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-cube"></i> Kumulo
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Produits</h3>
+                    <a href="offres.html">Minecraft</a>
+                    <a href="offres.html">Jeux</a>
+                    <a href="offres.html">Hébergement</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Entreprise</h3>
+                    <a href="a-propos.html">À propos</a>
+                    <a href="legal.html">Mentions légales</a>
+                    <a href="partenariats.html">Partenariats</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Statut des serveurs</a>
+                    <a href="https://ptero.kumulo.fr">Accès au panel</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kumulo. Tous droits réservés.</p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

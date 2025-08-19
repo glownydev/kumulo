@@ -7,32 +7,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23ffffff' d='M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z'/%3E%3C/svg%3E">
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="navbar-brand">Kumulo</a>
+        <a href="index.html" class="navbar-brand"><i class="fas fa-cube"></i> Kumulo</a>
         <div class="navbar-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
         <div class="navbar-links" id="navbar-links">
-            <a href="offres.html">LES OFFRES</a>
-            <a href="legal.html">LEGAL</a>
-            <a href="a-propos.html">A PROPOS DE NOUS</a>
-            <a href="partenariats.html">NOS PARTENARIATS</a>
+            <a href="offres.html">SERVEUR MINECRAFT</a>
+            <a href="offres.html">JEUX</a>
+            <a href="offres.html">HÉBERGEMENT</a>
+            <a href="a-propos.html">À PROPOS</a>
+            <a href="#" class="nav-button">COMMENCER</a>
         </div>
     </nav>
-    <div class="container">
-        <h1>Kumulo</h1>
-        <div class="subtitle">Hébergement Minecraft simple, rapide et sécurisé</div>
-        <div class="badge">Site en développement</div>
-        <p style="color:#ccc;font-size:1.05em;margin-top: 24px;margin-bottom:0;">Bienvenue sur la page d'accueil.<br>Naviguez en utilisant les liens ci-dessus.</p>
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>MINECRAFT<br>SERVER <span class="highlight">HOSTING</span></h1>
+                <div class="subtitle">Hébergement simple, rapide et sécurisé</div>
+                <div class="features-list">
+                    <div class="feature"><i class="fas fa-check-circle"></i> Accès complet aux fichiers</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> 20 Emplacements dans le monde</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> Protection DDoS avancée</div>
+                </div>
+                <div class="trusted-by">
+                    <span>Approuvé par plus de 2500+ utilisateurs</span>
+                    <div class="user-avatars">
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                    </div>
+                </div>
+                <a href="offres.html" class="start-button">Démarrer un serveur</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container game-section">
+        <h2>Nos offres de serveurs</h2>
+        <div class="offers">
+            <div class="offer">
+                <div class="offer-icon"><i class="fas fa-cubes"></i></div>
+                <div class="offer-title">Serveur Gratuit - Grade Fer</div>
+                <div class="offer-desc">Serveur 8 Go - Essai 10 jours (sera supprimé après)</div>
+                <div class="offer-price">0€ <span class="price-period">/mois</span></div>
+                <a href="https://billing.kumulo.fr/products/minecraft/serveur-gratuit" class="offer-link">Voir l'offre</a>
+            </div>
+            <div class="offer">
+                <div class="offer-icon"><i class="fas fa-cube"></i></div>
+                <div class="offer-title">Grade Or</div>
+                <div class="offer-desc">Serveur 16 Go</div>
+                <div class="offer-price">12€ <span class="price-period">/mois</span></div>
+                <a href="offres.html" class="offer-link">Service de paiement en cours de développement</a>
+            </div>
+            <div class="offer">
+                <div class="offer-icon"><i class="fas fa-gem"></i></div>
+                <div class="offer-title">Grade Diamant</div>
+                <div class="offer-desc">Serveur 32 Go</div>
+                <div class="offer-price">25€ <span class="price-period">/mois</span></div>
+                <a href="offres.html" class="offer-link">Service de paiement en cours de développement</a>
+            </div>
+        </div>
     </div>
     <footer>
-        <hr style="max-width:320px;margin:16px auto 8px auto;border-color: #444;">
-        <span>Vous avez déjà un compte ? <a href="https://ptero.kumulo.fr">Accédez au panel ci-dessous</a></span>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-cube"></i> Kumulo
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Produits</h3>
+                    <a href="offres.html">Minecraft</a>
+                    <a href="offres.html">Jeux</a>
+                    <a href="offres.html">Hébergement</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Entreprise</h3>
+                    <a href="a-propos.html">À propos</a>
+                    <a href="legal.html">Mentions légales</a>
+                    <a href="partenariats.html">Partenariats</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Statut des serveurs</a>
+                    <a href="https://ptero.kumulo.fr">Accès au panel</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kumulo. Tous droits réservés.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
