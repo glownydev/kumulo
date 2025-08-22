@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Offres - Kumulo</title>
+    <title>Offres - Kumulo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Mozilla:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23ffffff' d='M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="navbar-brand"><i class="fas fa-cube"></i> Kumulo</a>
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/logo.png" alt="Kumulo" style="height: 44px; width: auto; margin-right: 8px;">
+            <span class="brand-text">Kumulo</span>
+        </a>
         <div class="navbar-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -26,47 +29,38 @@
             <a href="https://billing.kumulo.fr" class="nav-button">COMMENCER</a>
         </div>
     </nav>
-    <div class="hero-section">
-        <div class="container">
-            <h1>NOS OFFRES</h1>
-            <div class="subtitle">HÉBERGEMENT DE SERVEURS MINECRAFT</div>
-            <div class="badge">MINECRAFT JAVA & BEDROCK</div>
-            <p>Découvrez nos offres d'hébergement de serveurs Minecraft optimisées pour une expérience de jeu fluide et sans lag.</p>
-        </div>
-    </div>
-    
-    <div class="container game-section">
-        <h2>Nos offres de serveurs</h2>
+
+    <div class="container">
+        <h1>Nos Offres <img src="minecraft.png" alt="Minecraft" style="height: 32px; width: auto; vertical-align: middle; margin-left: 10px;"></h1>
         <div class="offers">
             <div class="offer">
-                <div class="offer-icon"><i class="fas fa-cubes"></i></div>
+                <div class="offer-icon"><img src="fer.png" alt="Grade Fer" style="height: 32px; width: auto;"></div>
                 <div class="offer-title">Serveur Gratuit - Grade Fer</div>
                 <div class="offer-desc">Serveur 8 Go - Essai 10 jours (sera supprimé après)</div>
                 <div class="offer-price">0€ <span class="price-period">/mois</span></div>
                 <a href="https://billing.kumulo.fr/products/minecraft/serveur-gratuit" class="offer-link">Voir l'offre</a>
             </div>
             <div class="offer">
-                <div class="offer-icon"><i class="fas fa-cube"></i></div>
+                <div class="offer-icon"><img src="wolf.png" alt="Grade Or" style="height: 32px; width: auto;"></div>
                 <div class="offer-title">Grade Or</div>
                 <div class="offer-desc">Serveur 16 Go</div>
-                <div class="offer-price">12€ <span class="price-period">/mois</span></div>
+                <div class="offer-price">5€ <span class="price-period">/mois</span></div>
                 <a href="#" class="offer-link" data-toast="Service de paiement en cours de développement">Service de paiement en cours de développement</a>
             </div>
             <div class="offer">
-                <div class="offer-icon"><i class="fas fa-gem"></i></div>
+                <div class="offer-icon"><img src="diamant.png" alt="Grade Diamant" style="height: 32px; width: auto;"></div>
                 <div class="offer-title">Grade Diamant</div>
                 <div class="offer-desc">Serveur 32 Go</div>
-                <div class="offer-price">25€ <span class="price-period">/mois</span></div>
+                <div class="offer-price">15€ <span class="price-period">/mois</span></div>
                 <a href="#" class="offer-link" data-toast="Service de paiement en cours de développement">Service de paiement en cours de développement</a>
             </div>
         </div>
-        
-
     </div>
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <i class="fas fa-cube"></i> Kumulo
+                <img src="assets/logo.png" alt="Kumulo" style="height: 44px; width: auto; margin-right: 8px;">
+                <span class="brand-text">Kumulo</span>
             </div>
             <div class="footer-links">
                 <div class="footer-column">
@@ -77,11 +71,12 @@
                     <h3>Entreprise</h3>
                     <a href="a-propos.html">À propos</a>
                     <a href="legal.html">Mentions légales</a>
+                    <a href="confidentialite.html">Politique de confidentialité</a>
                     <a href="partenariats.html">Partenariats</a>
                 </div>
                 <div class="footer-column">
                     <h3>Support</h3>
-                    <a href="https://discord.gg/fDdbjMj9NM">Rejoindre le Discord</a>
+                    <a href="https://discord.gg/s9mxpgkmgZ">Rejoindre le Discord</a>
                     <a href="#" data-toast="Cette fonctionnalité est en cours de développement, veuillez patienter">Statut des serveurs</a>
                     <a href="https://ptero.kumulo.fr">Accès au panel</a>
                 </div>
