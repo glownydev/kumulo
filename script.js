@@ -104,7 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click handlers for development features
     document.querySelectorAll('[data-toast]').forEach(element => {
         element.addEventListener('click', function(e) {
-            e.preventDefault();
+            if (!element.hasAttribute('target')) {
+                e.preventDefault();
+            }
             const message = this.getAttribute('data-toast');
             showToast(message);
         });

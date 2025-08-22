@@ -13,23 +13,7 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="index.html" class="navbar-brand">
-            <img src="assets/logo.png" alt="Kumulo" style="height: 44px; width: auto; margin-right: 8px;">
-            <span class="brand-text">Kumulo</span>
-        </a>
-        <div class="navbar-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <div class="navbar-links" id="navbar-links">
-            <a href="offres.html">SERVEUR MINECRAFT</a>
-            <a href="a-propos.html">À PROPOS</a>
-            <a href="partenariats.html">PARTENARIATS</a>
-            <a href="https://billing.kumulo.fr" class="nav-button">COMMENCER</a>
-        </div>
-    </nav>
+
     <div class="hero-section">
         <div class="container">
             <div class="hero-content">
@@ -66,52 +50,24 @@
                 <div class="offer-title">Serveur Gratuit - Grade Fer</div>
                 <div class="offer-desc">Serveur 8 Go - Essai 10 jours (sera supprimé après)</div>
                 <div class="offer-price">0€ <span class="price-period">/mois</span></div>
-                <a href="https://billing.kumulo.fr/products/minecraft/serveur-gratuit" class="offer-link">Voir l'offre</a>
+                <a href="https://billing.kumulo.fr/products/minecraft/serveur-gratuit" class="offer-link" target="_blank" data-toast="Merci d'essayer notre service gratuit !" onclick="showToast(this.getAttribute('data-toast')); return true;">Voir l'offre</a>
             </div>
             <div class="offer">
                 <div class="offer-icon"><img src="or.png" alt="Grade Or" style="height: 32px; width: auto;"></div>
                 <div class="offer-title">Grade Or</div>
                 <div class="offer-desc">Serveur 16 Go</div>
                 <div class="offer-price">5€ <span class="price-period">/mois</span></div>
-                <a href="offres.html" class="offer-link">Service de paiement en cours de développement</a>
+                <a href="https://billing.kumulo.fr/products/minecraft/serveur-payant-grade-or" class="offer-link" data-toast="Merci pour votre paiement, cela nous soutient énormément !" target="_blank" onclick="showToast(this.getAttribute('data-toast')); return true;">Voir l'offre</a>
             </div>
             <div class="offer">
                 <div class="offer-icon"><img src="diamant.png" alt="Grade Diamant" style="height: 32px; width: auto;"></div>
                 <div class="offer-title">Grade Diamant</div>
                 <div class="offer-desc">Serveur 32 Go</div>
                 <div class="offer-price">15€ <span class="price-period">/mois</span></div>
-                <a href="offres.html" class="offer-link">Service de paiement en cours de développement</a>
+                <a href="https://billing.kumulo.fr/products/minecraft/serveur-payant-grade-diamant" class="offer-link" data-toast="Merci pour votre paiement, cela nous soutient énormément !" target="_blank" onclick="showToast(this.getAttribute('data-toast')); return true;">Voir l'offre</a>
             </div>
         </div>
     </div>
 
-                <footer>
-                    <div class="footer-content">
-                        <div class="footer-logo">
-                            <img src="assets/logo.png" alt="Kumulo" style="height: 44px; width: auto; margin-right: 8px;">
-                            <span class="brand-text">Kumulo</span>
-                        </div>
-                        <div class="footer-links">
-                            <div class="footer-column">
-                                <h3>Produits</h3>
-                                <a href="offres.html">Minecraft</a>
-                            </div>
-                            <div class="footer-column">
-                                <h3>Entreprise</h3>
-                                <a href="a-propos.html">À propos</a>
-                                <a href="legal.html">Mentions légales</a>
-                                <a href="confidentialite.html">Politique de confidentialité</a>
-                                <a href="partenariats.html">Partenariats</a>
-                            </div>
-                            <div class="footer-column">
-                                <h3>Support</h3>
-                                <a href="https://discord.gg/s9mxpgkmgZ">Rejoindre le Discord</a>
-                                <a href="#" data-toast="Cette fonctionnalité est en cours de développement, veuillez patienter">Statut des serveurs</a>
-                                <a href="https://ptero.kumulo.fr">Accès au panel</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <p>&copy; 2025 Kumulo. Tous droits réservés.</p>
-                    </div>
-                </footer>
+
+    <script src="script.js"></script>
